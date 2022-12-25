@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+footer {
+  padding: 50px 0 0;
+  background-color: #e8f2f3;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.top {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-between;
+  grid-column-gap: 25px;
+  padding-bottom: 30px;
+}
+.top .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.top .cards h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  /* #222A46 */
+
+  color: #222a46;
+  margin-bottom: 10px;
+}
+.top .cards p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  /* #353949 */
+
+  color: #353949;
+  margin-bottom: 5px;
+}
+.bottom {
+    border-top: 1px solid gray;
+  padding: 18px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; */
+}
+.bottom .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* #505567 */
+
+  color: #505567;
+}
+.bottom img {
+  display: inline-block;
+  margin: 0 7.5px;
+}
+@media (max-width:1000px){
+    .container{
+        max-width: 900px;
+    }
+    .top{
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap: 30px;
+    }
+    .bottom{
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        grid-row-gap: 30px;
+    }
+}
+@media (max-width:800px){
+    .container{
+        max-width: 750px;
+    }
+    .top{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+    }
+    .bottom{
+        grid-template-columns: 1fr;
+        justify-content: center;  
+        grid-row-gap: 30px;  
+    }
+}
